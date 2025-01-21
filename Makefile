@@ -10,6 +10,10 @@ SOL_2 = app/sol_2.py
 SOL_2_TEST = tests/sol_2_test.py
 TESTS = tests
 
+freeze:
+	@echo "Создание файла зависимостей..."
+	$(PIP) freeze > requirements.txt
+
 # Установить зависимости
 install:
 	@echo "Установка зависимостей..."
